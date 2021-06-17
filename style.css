@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+h1 { 
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.loader {
+    margin: auto;
+    margin-top: 100px;
+    margin-top: 100px;
+    border: 16px solid #5f0f40;
+    width: 120px;
+    height: 120px;
+    border-top-color: #0f4c5c;
+    border-radius: 50%;
+    animation: chargeur 4s linear infinite;
+}
+
+@keyframes chargeur {
+    0% {
+        transform: rotate(0deg) scale(1); /* 1 = 100%  */
+    border-top-color: #9a031e;
+    border-bottom-color: #9a031e;
+    }
+    25% {
+        border-top-color: #fb8b24;
+        border-bottom-color: #fb8b24;
+    }
+    50% {
+        transform: rotate(360deg)
+        scale(1.15);
+         /* 115% */
+         border-top-color: #e36414;
+         border-bottom-color: #e36414;
+        }
+        75% {
+            border-top-color: #ffe8d6;
+         border-bottom-color: #ffe8d6;
+        }
+        100% {
+            transform: rotate(720deg) scale(1);
+            border-top-color: #a5a58d;
+            border-bottom-color: #a5a58d;
+        }
+    }
